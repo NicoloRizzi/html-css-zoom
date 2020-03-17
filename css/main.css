@@ -95,10 +95,46 @@ body {
 }
 
 /* SEZIONE CONTROLLI */
-#sezione-controlli {
+#sezione-controlli{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #333;
   width: 100%;
   padding: 15px;
-  background: yellow;
+}
+
+#sezione-controlli .fa-share-square {
+  color: green;
+}
+.list-inline {
+  display: flex;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
 
 
+.list-inline li {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.list-inline li:not(first-child) {
+  margin-left: 15px;
+}
+
+.list-inline li i {
+  font-size: 20px;
+  margin-bottom: 5px;
+}
+.list-inline li span {
+font-size: 12px;
+}
+
+.end-action a {
+  text-decoration: none;
+  font-size: 14px;
+  color: red;
 }

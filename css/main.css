@@ -77,14 +77,21 @@ body {
   border-color: rgba(255, 255, 255, 0.5);
 }
 
-#sezione-riquadri .utente.name {
+#sezione-riquadri .utente .name,
+#sezione-riquadri .utente i {
   position: absolute;
   bottom: 0px;
-  left: 5px;
+  left: 0px;
   background: rgba(0, 0, 0, 0.8);
   color: white;
+  font-size: 12px;
   padding: 2px 4px;
+  opacity: 0;
+}
 
+#sezione-riquadri .utente.active .name,
+#sezione-riquadri .utente:not(.active) i {
+  opacity: 1;
 }
 
 /* SEZIONE CONTROLLI */
